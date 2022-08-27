@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+#home {
+  background-color: #5f4cea;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+#home:hover,
+#home:focus {
+  background-color: #828bf0;
+}
+/* div */
+#divplan {
+  width: 800px;
+  min-height: 500px;
+  border: solid 3px black;
+  text-align: center;
+  border-radius: 20px;
+  margin: 30px auto;
+}
+/* input */
+#inputvalue {
+  padding: 10px;
+  width: 75%;
+  border-radius: 10px;
+}
+#addbutton {
+  padding: 10px;
+  border-radius: 10px;
+}
+.display {
+  padding: 0px;
+}
+.display li {
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+  list-style-type: none;
+  font-size: 18px;
+  transition: 0.2s;
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.display li:hover {
+  background: #ddd;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+.close:hover {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="briefing.css" />
+
+    <title>Briefing</title>
+  </head>
+  <body onkeypress="alert('dont press any key')">
+    <h1>GTK's Briefing</h1>
+    <a href="#event"> <h3>16/8/2022 - Event Handling</h3></a>
+
+    <!-- this is for events -->
+    <div id="event">
+      <p class="example">*example of event by mouse</p>
+      <a
+        href="https://www.w3schools.com/jsref/dom_obj_event.asp"
+        target="_blank"
+        >EVENT LINK</a
+      >
+      <div>
+        <table>
+          <tr>
+            <th>Function</th>
+            <th>Explanation</th>
+          </tr>
+          <tr>
+            <td>onclick</td>
+            <td>The event occurs when the user clicks on an element.</td>
+          </tr>
+          <tr>
+            <td>ondblclick</td>
+            <td>The event occurs when the user double-clicks on an element.</td>
+          </tr>
+          <tr>
+            <td>onmouseover</td>
+            <td>
+              The event occurs when the pointer is moved onto an element, or
+              onto one of its children.
+            </td>
+          </tr>
+          <tr>
+            <td>oncontextmenu</td>
+            <td>
+              The event occurs when the user right-clicks on an element to open
+              a context menu
+            </td>
+          </tr>
+          <tr>
+            <td>onmousedown (useless)</td>
+            <td>
+              The event occurs when the user presses a mouse button over an
+              element
+            </td>
+          </tr>
+          <tr>
+            <td>onmouseup (useless)</td>
+            <td>
+              The event occurs when a user releases a mouse button over an
+              element
+            </td>
+          </tr>
+          <tr>
+            <td>onmouseenter (useless)</td>
+            <td>The event occurs when the pointer is moved onto an element</td>
+          </tr>
+          <tr>
+            <td>onmouseleave (useless)</td>
+            <td>
+              The event occurs when the pointer is moved out of an element
+            </td>
+          </tr>
+          <tr>
+            <td>onmousemove</td>
+            <td>
+              The event occurs when the pointer is moving while it is over an
+              element
+            </td>
+          </tr>
+          <tr>
+            <td>onmouseover</td>
+            <td>
+              The event occurs when the pointer is moved onto an element, or
+              onto one of its children
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <button id="demo1">onclick</button>
+        <button id="demo2">ondblclick</button>
+        <button id="demo3">onmouseover</button>
+        <button id="demo4">oncontextmenu</button>
+        <br />
+        <a
+          href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmousedown"
+          target="_blank"
+        >
+          <button id="demo5">onmousedown & onmouseup</button>
+        </a>
+        <a
+          href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmouseenter"
+          target="_blank"
+        >
+          <button id="demo6">onmouseenter & onmouseleave</button>
+        </a>
+        <a
+          href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmousemove"
+          target="_blank"
+        >
+          <button id="demo7">onmouseenter & onmouseleave</button> </a
+        ><br />
+        <p>*Example of onmousemove vs onmouseleave vs onmouseout.</p>
+        <a
+          href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmousemove_leave_out"
+          target="_blank"
+          ><button>THIS</button></a
+        >
+        <br />
+      </div>
+      <div>
+        <h2>Additional event</h2>
+        <table>
+          <tr>
+            <th>Event</th>
+            <th>Explaination</th>
+          </tr>
+          <tr>
+            <td>onfocus</td>
+            <td>The event occurs when an element gets focus</td>
+          </tr>
+          <tr>
+            <td>onblur</td>
+            <td>The event occurs when an element loses focus</td>
+          </tr>
+          <tr>
+            <td>onchange</td>
+            <td>
+              The event occurs when the content of a form element, the
+              selection, or the checked state have changed (for input, select,
+              and textarea)
+            </td>
+          </tr>
+          <tr>
+            <td>onkeydown/onkeypress/onkeyup</td>
+            <td>The event occurs when the user is pressing a key</td>
+          </tr>
+          <tr>
+            <td>ontoggle</td>
+            <td>
+              The event occurs when the user opens or closes the
+              <span style="color: red">details</span> element
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div style="display: flex; justify-content: center">
+        <div id="blurfocus">
+          <h2>onfocus & onblur</h2>
+          <input type="text" onblur="blur1(this)" onfocus="focus1(this)" />
+        </div>
+        <div id="onchangedisplay">
+          <h2>Onchange</h2>
+          <input id="input" type="text" />
+          <p id="inputdisplay">Example</p>
+        </div>
+        <div id="details">
+          <h2>ontoggle</h2>
+          <details ontoggle>
+            <summary>Test details</summary>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </details>
+        </div>
+      </div>
+    </div>
+    <!-- this is for DOM -->
+    <a href="#dom"> <h3>18/8/2022 - DOM (Document Object Model)</h3></a>
+    <div id="dom">
+      <div>
+        <a href="https://www.w3schools.com/js/js_htmldom.asp"
+          ><button>Introduction of DOM</button></a
+        >
+        <table>
+          <tr>
+            <th colspan="2">DOM use for:</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Change the content of HTML elements</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Change the style (CSS) of HTML elements</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>React to HTML DOM events</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Add and delete HTML elements</td>
+          </tr>
+        </table>
+        <div class="domdiv">
+          <h3>0. How to target HTML elements</h3>
+          <table>
+            <tr>
+              <th colspan="3">Example:</th>
+            </tr>
+            <tr>
+              <td>document.getElementById("example")</td>
+              <td>Target element with Id = "example"</td>
+              <td>
+                <a
+                  href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementbyid"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>document.getElementByClassName("example")</td>
+              <td>
+                Target <strong>ALL</strong> element with Class = "example"
+              </td>
+              <td>
+                <a
+                  href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbyclassname"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>document.getElementsByTagName("h1")</td>
+              <td>
+                Target <strong>ALL</strong> element by Tagname e.g (h1, p, etc..
+                )
+              </td>
+              <td>
+                <a
+                  href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbytagname2"
+                  >Link</a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td>document.querySelectorAll("p.intro")</td>
+              <td>
+                Target <strong>ALL</strong> element by Tagname
+                <strong>WITH/WITHOUT</strong> certain <bold>id or class</bold>
+              </td>
+              <td>
+                <a
+                  href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_queryselectorall"
+                  >Link</a
+                >
+              </td>
+            </tr>
+          </table>
+          <a href="https://www.w3schools.com/js/js_htmldom_elements.asp"
+            >Others DOMs</a
+          >
+          <h2>Example set DOM as object:</h2>
+          <p>const example = document.getElementById("example")</p>
+          <p>const example = document.getElementByClassName("example")</p>
+          <p>const x = document.getElementsByTagName("p")</p>
+          <p>const y = document.querySelectorAll("p.intro");</p>
+          <br />
+        </div>
+        <div class="domdiv">
+          <h3>1. Change the content of HTML elements</h3>
+          <table>
+            <tr>
+              <th>code</th>
+              <th colspan="2">Explaination</th>
+            </tr>
+            <tr>
+              <td>.innerHTML</td>
+              <td>The easiest way to modify the content of an HTML element</td>
+              <td>
+                <a target="_blank"
+                  href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_innerhtml"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>.attribute</td>
+              <td>Changes the HTML element attribute</td>
+              <td>
+                <a target="_blank"
+                  href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_image"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>.write</td>
+              <td>Used to write directly to the HTML</td>
+              <td>
+                <a target="_blank"
+                  href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_image"
+                  >Link</a
+                >
+              </td>
+            </tr>
+          </table>
+          <div>
+            <h4>Example:</h4>
+            <p>document.getElementById("example").innerHTML = "Hello World!"</p>
+          </div>
+          <div>
+            <button id="change1">Change text</button>
+            <button id="change2">Change button</button>
+            <button id="change3">Reset</button>
+            <h3 id="testing">This is an example</h3>
+          </div>
+          <br /><br />
+        </div>
+        <div class="domdiv">
+          <h3>2. Change the style (CSS) of HTML elements</h3>
+          <table>
+            <tr>
+              <th colspan="3">Change elements style</th>
+            </tr>
+            <tr>
+              <td>.style.x="y"</td>
+              <td>Change element css style once excuted</td>
+              <td>
+                <a target="_blank"
+                  href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_color2"
+                  >Link</a
+                >
+              </td>
+            </tr>
+          </table>
+          <div>
+            <h4>Example:</h4>
+            <p>document.getElementById("example").style.color = "blue"</p>
+          </div>
+          <div>
+            <button id="stylecolor">Change text color</button>
+            <button id="stylesize">Change text size</button>
+            <button id="stylebackground">Change background</button>
+            <button id="stylereset">Reset</button>
+            <h3 id="styletest">This is an example</h3>
+            <br /><br />
+          </div>
+        </div>
+        <div class="domdiv">
+          <h3>3. React to HTML DOM events</h3>
+          <br />
+          <p>This is basically DOM + events</p>
+          <table>
+            <tr>
+              <th colspan="2">Syntax</th>
+            </tr>
+            <tr>
+              <td>.addEventListener("event",function)</td>
+              <td>
+                <a target="_blank"
+                  href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add_many2"
+                  >Link</a
+                >
+              </td>
+            </tr>
+          </table>
+          <p>example:</p>
+          <p>
+            document.getElementById("demo").addEventListener("click",function)
+          </p>
+          <br />
+        </div>
+        <div class="domdiv">
+          <h3>4. Add and delete HTML elements</h3>
+          <a href="https://www.w3schools.com/js/js_htmldom_navigation.asp"
+            >Navigation & Node</a
+          ><br>
+          <a href="https://www.w3schools.com/js/js_htmldom_nodes.asp">Create/Delete HTML</a>
+          <br><br>
+          <p>&lt;div&gt;&lt;h1&gt;Hello&lt;h1&gt;&lt;h2&gt;World&lt;h2&gt;&lt;/div&gt;</p>
+          <div style="display: flex; justify-content: center">
+           <div id="tablenavi" >
+            <table>
+              <tr>
+                <th>Navigation</th>
+                <th>Explaination</th>
+              </tr>
+              <tr>
+                <td>parentNode</td>
+                <td>&lt;div&gt;</td>
+              </tr>
+              <tr>
+                <td>childNodes[]</td>
+                <td>&lt;h1&gt;  &lt;h2&gt;</td>
+              </tr>
+              <tr>
+                <td>firstChild</td>
+                <td>&lt;h1&gt;</td>
+              </tr>
+              <tr>
+                <td>lastChild</td>
+                <td>&lt;h2&gt;</td>
+              </tr>
+              <tr>
+                <td>nextSibling</td>
+                <td>&lt;h1&gt; next sibling is &lt;h2&gt;</td>
+              </tr>
+              <tr>
+                <td>previousSibling</td>
+                <td>&lt;h2&gt; previous sibling is &lt;h1&gt;</td>
+              </tr>
+            </table>
+          </div>
+          <div style="width: 10px;"></div>
+          <div id="tablenode">
+            <table>
+              <tr>
+                <th>Node</th>
+                <th colspan="2">Explaination</th>
+              </tr>
+              <tr>
+                <td>.nodeValue</td>
+                <td>Hello, World</td>
+                <td><a target="_blank" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_innerhtml2">Link</a></td>
+              </tr>
+              <tr>
+                <td>.nodeName</td>
+                <td>div, h1, h2</td>
+                <td><a target="_blank" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_nodename">Link</a></td>
+              </tr>
+            </table>
+          </div>
+          </div>
+         <div>
+          <h4>Add & remove Nodes </h4>
+          <table>
+            <tr>
+              <td>.createElement("")</td>
+              <td>Create new element (h1,h2,h3)</td>
+            </tr>
+            <tr>
+              <td>.createTextNode("text here")</td>
+              <td>Create new text </td>
+            </tr>
+            <tr>
+              <td>x.appendChild(y)</td>
+              <td>Create new child. Add y into x </td>
+              <td><a
+                target="_blank" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementcreate">Link</a></td>
+            </tr>
+            <tr>
+              <td>x.remove()</td>
+              <td>Remove x element</td>
+              <td><a target="_blank" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementremove">Link</a></td>
+            </tr>
+            <tr>
+              <td>x.removeChild(y)</td>
+              <td>X=parent,Y=child. Remove element Y in X</td>
+              <td><a target="_blank" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementremovechild">Link</a></td>
+            </tr>
+            <tr>
+              <td>x.replaceChild(y,z)</td>
+              <td>X=parent,Y=new child,Z=old child. Replace Z with Y in X</td>
+              <td><a target="_blank" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementreplace">Link</a></td>
+            </tr>
+          </table>
+         </div>
+         <h4>Click Bottom Link to "TO DO LIST" Project</h4>
+         <a target="_blank" href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_todo">Link</a>
+        </div>
+      </div>
+      </div>
+      <!-- conclusion -->
+      <div>
+        <h2>CONCLUSION</h2>
+        <p>1. Events can be use in React</p>
+        <p>2. DOM cant be use in React</p>
+        <p>3. DOM events can be use in React</p>
+        <p>
+          4. Tryout DOM exercise
+          <a
+            href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html1"
+            >Link</a
+          >
+        </p>
+        <br /><br />
+      </div>
+    </div>
+    <script src="briefing.js"></script>
+  </body>
+</html>

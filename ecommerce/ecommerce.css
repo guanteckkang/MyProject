@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+#cartbutton {
+  padding: 2px;
+  border: none;
+  border-radius: 10px;
+  position: fixed;
+  float: right;
+  top: 46vw;
+  right: 2vw;
+  z-index: 10;
+  background-color: transparent;
+}
+#cartamount {
+  color: red;
+}
+#emptydiv {
+  height: 100px;
+}
+#item {
+  margin: auto;
+  width: 1300px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 20px;
+  justify-content: center;
+}
+#item div {
+  margin-left: 20px;
+}
+#shoppingcart,
+#label {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  min-width: 800px;
+}
+tr,
+td {
+  border: 3px solid black;
+}

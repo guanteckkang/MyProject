@@ -1,0 +1,58 @@
+#home {
+  background-color: #5f4cea;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+#home:hover,
+#home:focus {
+  background-color: #828bf0;
+}
+#instruction {
+  width: 400px;
+  height: 150px;
+  margin: auto;
+  text-align: justify;
+}
+/* tic tac toe */
+#tictactoe {
+  font-family: sans-serif;
+  margin: 10px;
+  text-align: center;
+}
+#tictactoe input {
+  color: blue;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+}
+#tictactoe h1 {
+  font-size: 40px;
+}
+#tictactoe button {
+  color: white;
+  background-color: blue;
+  padding: 15px;
+  border-radius: 10px;
+}

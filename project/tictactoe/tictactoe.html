@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/g.png" />
+    <!-- css -->
+    <link rel="stylesheet" href="Tic-Tac-Toe.css" />
+    <script src="Tic-Tac-Toe.js"></script>
+    <title>title</title>
+  </head>
+  <body>
+    <!-- home button -->
+    <a href="/index.html"><button id="home">HOME</button></a>
+    <div id="tictactoe">
+      <h1>TIC-TAC-TOE</h1>
+      <p id="turns">Player X turns</p>
+      <div>
+        <input type="text" id="b1" onclick="boxs1(); checkwin();" readonly />
+        <input type="text" id="b2" onclick="boxs2(); checkwin();" readonly />
+        <input type="text" id="b3" onclick="boxs3(); checkwin();" readonly />
+        <br />
+        <input type="text" id="b4" onclick="boxs4(); checkwin();" readonly />
+        <input type="text" id="b5" onclick="boxs5(); checkwin();" readonly />
+        <input type="text" id="b6" onclick="boxs6(); checkwin();" readonly />
+        <br />
+        <input type="text" id="b7" onclick="boxs7(); checkwin();" readonly />
+        <input type="text" id="b8" onclick="boxs8(); checkwin();" readonly />
+        <input type="text" id="b9" onclick="boxs9(); checkwin();" readonly />
+      </div>
+      <div>
+        <button id="reset" onclick="reset()">RESET GAME</button>
+      </div>
+      <br /><br />
+      <p id="instruction">
+        There is 9 boxs. Start with <span style="color: blue">"X"</span> then
+        <span style="color: red">"O"</span> . Click on the box you wanted.
+        Winner is decided when then is 3 similar symbol line together and an
+        alert will pop up the winner. The game stopped when there is winner or
+        box is full. Click reset to start another game. Goodluck.
+      </p>
+    </div>
+  </body>
+</html>

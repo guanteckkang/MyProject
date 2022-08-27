@@ -1,0 +1,55 @@
+/* home button and instruction */
+#home {
+  background-color: #5f4cea;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+#home:hover,
+#home:focus {
+  background-color: #828bf0;
+}
+#instruction {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0;
+}
+#stopwatchdiv {
+  font-family: sans-serif;
+  text-align: center;
+  border: solid 3px black;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+button {
+  padding: 10px;
+  font-size: 20px;
+}
+h2 {
+  margin: 50px auto;
+}
+#stopwatchdiv span {
+  font-size: 100px;
+  color: #5f4cea;
+}

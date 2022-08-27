@@ -1,0 +1,6 @@
+#showtime {
+  font-family: Orbitron;
+}
+#showtime > h1 {
+  font-size: 100px !important;
+}

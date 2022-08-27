@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+h1 {
+  margin: 30px auto;
+  font-size: 50px;
+}
+h3 {
+  margin-top: 20px;
+}
+.example {
+  color: red;
+  font-size: 15px;
+}
+button {
+  font-size: 20px;
+  padding: 10px;
+}
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+#onchangedisplay,
+#blurfocus,
+#details {
+  border: solid 3px black;
+  display: inline-block;
+  padding: 30px;
+  height: 100px;
+}
+.domdiv {
+  border: solid 3px black;
+  width: 70%;
+  margin: 20px auto;
+  margin-bottom: 20px;
+}

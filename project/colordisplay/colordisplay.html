@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/g.png" />
+    <!-- css -->
+    <link rel="stylesheet" href="colordisplay.css" />
+    <script src="colordisplay.js"></script>
+    <title>Color Display</title>
+  </head>
+  <body>
+    <!-- home button -->
+    <a href="/index.html"><button id="home">HOME</button></a>
+    <!-- color flipper -->
+    <div id="colortest">
+      <p id="title">Color Flipper</p>
+      <div id="colorflipper">
+        <p id="colordisplay">
+          Background color: <span id="colorblue">rgba(0,0,255,1)</span>
+        </p>
+        <br />
+        <button id="testcolor" onclick="button1()">
+          Click to change color
+        </button>
+      </div>
+      <div class="range">
+        <p>Red</p>
+        <input
+          id="redrange"
+          type="range"
+          value="0"
+          min="0"
+          max="255"
+          onchange="colorrange()"
+        />
+        <p id="redvalue">0</p>
+      </div>
+      <div class="range">
+        <p>Green</p>
+        <input
+          id="greenrange"
+          type="range"
+          value="0"
+          min="0"
+          max="255"
+          onchange="colorrange()"
+        />
+        <p id="greenvalue">0</p>
+      </div>
+      <div class="range">
+        <p>Blue</p>
+        <input
+          id="bluerange"
+          type="range"
+          value="0"
+          min="0"
+          max="255"
+          onchange="colorrange()"
+        />
+        <p id="bluevalue">0</p>
+      </div>
+      <div class="range">
+        <p>Alpha</p>
+        <input
+          id="alpharange"
+          type="range"
+          value="0"
+          min="0"
+          max="1"
+          onchange="colorrange()"
+        />
+        <p id="alphavalue">0</p>
+      </div>
+
+      <p id="instruction">
+        There is 2 way to change to color. <br />
+        1: Click on the button to generate random color and its code. <br />
+        2: Drag one of the four range for color you wish.
+      </p>
+    </div>
+  </body>
+</html>
