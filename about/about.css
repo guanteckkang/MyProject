@@ -32,7 +32,7 @@
 }
 /* about css */
 body {
-  background-image: url("/img/nature.jpg");
+  background-image: url("../img/nature.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
